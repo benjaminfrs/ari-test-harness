@@ -1,0 +1,30 @@
+{
+  "name": "ari-test-harness",
+  "version": "1.0.0",
+  "description": "Test harness for Ari end-to-end testing",
+  "main": "src/math.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:math": "jest tests/math.test.js",
+    "test:strings": "jest tests/strings.test.js"
+  },
+  "keywords": [
+    "ari",
+    "test",
+    "harness"
+  ],
+  "author": "Ari Test Framework",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  }
+}
