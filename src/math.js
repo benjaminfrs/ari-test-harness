@@ -32,7 +32,7 @@ function subtract(a, b) {
  * @returns {number}
  */
 function multiply(a, b) {
-  throw new Error('Not implemented: multiply');
+  return a * b;
 }
 
 /**
