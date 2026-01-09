@@ -44,7 +44,12 @@ function multiply(a, b) {
  * @returns {number}
  */
 function divide(a, b, precision = 2) {
-  throw new Error('Not implemented: divide');
+  if (b === 0) {
+    return Infinity;
+  }
+  const result = a / b;
+  const factor = Math.pow(10, precision);
+  return Math.round(result * factor) / factor;
 }
 
 /**
